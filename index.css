@@ -21,19 +21,25 @@ body {
     color: var(--light-color);
 }
 
+/* Layout */
 
-body {
-    margin: 0;
-    background: #ac8d0b;
+#newsletterForm {
+    width: fit-content;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-form {
+#newsletterForm > * {
+    margin-bottom: 2rem;
 }
+
+/* Typography */
 
 h3 {
-    color: green;
-    margin-top: 20px;
-    margin-bottom: 0;
+    font-size: 2rem;
+    text-align: center;
 }
 
 input {
