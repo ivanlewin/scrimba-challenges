@@ -43,22 +43,90 @@ h3 {
 }
 
 input {
-    border-radius: 20px;
-    width: 200px;
+    padding: 0.25em;
+}
+
+/* Visuals */
+
+/* General input and button */
+/* Adapted from https://codepen.io/Oreh/pen/JLeLJQ */
+
+input,
+button {
+    color: inherit;
+    background-color: inherit;    
+    border: none;
+}
+
+input:focus,
+input:hover,
+button:hover,
+button:focus {
+    outline: none;
+}
+
+input {
+    border: solid 2px;
+    border-image: linear-gradient(to left, #ff713b, #ffa51d) 1;
+    
 }
 
 button {
-    display: block;
-    border-radius: 2px;
-    background: #3d492b;
-    font-size: 15px;
+    background: linear-gradient(to left, #ff713b, #ffa51d);
+    border-radius: 8px;
+    padding: 2px;
+    
+    transition: font-size 100ms ease-in-out;
 }
 
-button:hover {
-    font-size: 20px;
+#button-background {
+    display: block;
+    background-color: var(--light-color);
+    padding: 0.75em 1.5em;
+    border-radius: 6px;
+}
+
+#button-background.dark-mode {
+    background-color: var(--dark-color);
+}
+
+button:hover,
+button:focus {
+    cursor: pointer;
+    font-size: 1.15em;
+    outline: none;
 }
 
 button:active {
-    color: red;
+    background-color: inherit;
+}
+
+/* Email input and label */
+
+.input-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.input-container label {
+    margin: 0 0 0.25em 0;
+    text-align: center;
+}
+
+@media (min-width: 450px) {
+
+    .input-container {
+        width: 100%;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+    
+    .input-container label {
+        margin: 0 1em 0 0;
+    }
+    
+}
+
 }
 
