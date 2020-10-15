@@ -1,0 +1,30 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="index.css" type="text/css">
+    </head>
+    <body>
+        <div class="dark-mode-toggler">
+            <input type="checkbox" id="toggler">
+            <label for="toggler" aria-label="Toggler for Dark Mode"></label>
+        </div>        
+        <div id="overlay">
+            <div id="modal">
+                <h2 id="response">Success</h2>
+                <button id="close-modal">Close! 👋</button>
+            </div>
+        </div>
+        <form id="newsletterForm" action="#">
+            <h3>Join the newsletter</h3>
+            <div class="input-container">
+                <label for="name-input">name</label>
+                <input type="text" id="name-input" placeholder="John" autofocus>
+            </div>
+            <div class="input-container">
+                <label for="email-input">email*</label>
+                <input type="email" id="email-input" placeholder="john@example.com" required>
+            </div>
+            <button type="subtmit"><span id="button-background">Submit</span></button>
+        </form>
+        <script src="index.js"></script>
+    </body>
+</html>
