@@ -1,7 +1,25 @@
+/* Global variables */
 
+* {
+    /* border: solid red 1px; */
+}
 
+:root {
+    --light-color: #F5F5F5;
+    --dark-color: #181818;
+}
 
+body {
+    margin: 0;
+    font-size: 1.15rem;
+    background-color: var(--light-color);
+    color: var(--dark-color);
+}
 
+.dark-mode {
+    background-color: var(--dark-color);
+    color: var(--light-color);
+}
 
 
 body {
