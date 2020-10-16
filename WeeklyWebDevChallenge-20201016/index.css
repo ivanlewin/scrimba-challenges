@@ -185,6 +185,25 @@ button:active {
 h2 {
     font-size: 30px;
     font-weight: bold;
+    text-align: center;    
+}
+
+#emailAddress {
+    font-weight: bolder;
+}
+
+#overlay p {
+    text-align: center;
+}
+
+#close-modal {
+    margin: 0 auto;
+    display: block;
+    
+    background: linear-gradient(to left, var(--accent-color-1), var(--accent-color-2));
+    border-radius: 8px;
+    padding: 0.4em 0.7em;
+    transition: font-size 100ms ease-in-out;
 }
 
 /* Dark mode toggler */

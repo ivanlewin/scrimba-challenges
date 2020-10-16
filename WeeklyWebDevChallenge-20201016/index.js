@@ -7,7 +7,8 @@ const modal = document.getElementById("modal");
 const overlay = document.getElementById("overlay");
 const nameSpan = document.getElementById("name");
 
-const showFeedback = function(feedback) {
+confetti.speed = 0.1;
+
 const showFeedback = function(success) {
     // Displays a modal with a success/error message
     if(success) {
