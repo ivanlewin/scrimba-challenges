@@ -52,6 +52,20 @@ input {
     padding: 0.25em;
 }
 
+#privacy {
+    font-size: .5em;
+    width: 70%;
+    text-align: center;
+}
+
+a {
+    color: var(--accent-color-1);
+}
+
+a:active {
+    color: var(--accent-color-2);
+}
+
 /* Visuals */
 
 /* General input and button */
