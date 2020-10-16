@@ -47,9 +47,13 @@ const toggleMode = function(event) {
     if(event.target.checked) {
         document.body.classList.add("dark-mode");
         document.getElementById("button-background").classList.add("dark-mode");
+        modal.classList.add("dark-mode");
+        overlay.classList.add("dark-mode");
     } else {
         document.body.classList.remove("dark-mode");
         document.getElementById("button-background").classList.remove("dark-mode");
+        modal.classList.remove("dark-mode");
+        overlay.classList.remove("dark-mode");
     }
 }
 
