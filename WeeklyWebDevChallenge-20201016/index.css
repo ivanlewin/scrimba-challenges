@@ -133,7 +133,12 @@ button:active {
     text-align: center;
 }
 
-@media (min-width: 450px) {
+@media (min-width: 500px) {
+    
+    .input-container,
+    #privacy {
+        width: 60%;
+    }
 
     .input-container {
         width: 100%;
